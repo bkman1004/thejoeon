@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+* {
+    margin: 0; 
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #303030;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;        
+}
+
+header {
+  position: fixed; top: 0; right: 0; left: 0; z-index: 10;
+  background: #212121;
+  height: 70px;
+}
+
+header * {
+  color: white;
+  font-weight: bold;
+}
+
+header h1 {
+  float: left;
+  width: 151px; height: 34px;
+  margin-top: 20px;
+  background: url(../images/youtube_logo.png) 0 0 no-repeat;
+  text-indent: -9999px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul li {
+  float: left;
+  /* margin-left: 30px; */
+}
+
+header li a {
+  display: block;
+  height: 70px;
+  padding: 0 15px;
+  line-height: 70px;
+}
+
+.sec-video {
+  position: relative;
+  width: 800px;
+  margin: 100px auto 0;
+}
+
+.iframe-video {
+  display: block;
+}
+
+.video-arrow a {
+    display: block;
+    width: 100px; height: 100px;
+    position: absolute; top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding-top: 25px;
+    background: black;
+    text-align: center;
+}
+
+.video-arrow i {
+    color: white;
+    font-size: 50px;
+}
+
+.blind {
+    display: inline-block;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.video-arrow .btn-btn-pre {
+    left: -50px;
+}
+
+.video-arrow .btn-btn-next {
+    right: -50px;
+}
+
+.video-dot {
+    position: absolute; bottom: 20px; left: 50%;
+    transform: translateX(-50%);
+    /* margin-left: -55px; 가로사이즈 158/2 값을 당겨 */
+    text-align: center;
+}
+
+.video-dot a {
+    display: inline-block;
+    width: 20px; height: 20px;
+    margin: 0px 5px;
+    border-radius: 50%;
+    background: red;
+    text-indent: -9999px;
+}
+
+.video-desc {
+    margin: 20px auto 0;
+    width: 800px;
+}
+
+.video-desc strong {
+    font-size: 24px;
+}
+
+.video-desc .txt {
+    overflow-y: auto;
+    height: 150px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+}
